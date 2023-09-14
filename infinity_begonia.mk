@@ -15,33 +15,21 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 # Inherit from begonia device
 $(call inherit-product, device/redmi/begonia/device.mk)
 
-# Inherit some common Alpha stuff
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common Infinity stuff
+$(call inherit-product, vendor/infinity/config/common_full_phone.mk)
 TARGET_SUPPORTS_QUICK_TAP := true
 TARGET_DOESNT_LIKE_FLIPENDO := true
-TARGET_ENABLE_BLUR := true
-
-# Device config
+TARGET_SUPPORTS_BLUR := false
 TARGET_HAS_UDFPS := false
-TARGET_EXCLUDES_AUDIOFX := true
 TARGET_FACE_UNLOCK_SUPPORTED := true
 
-# GAPPS
-WITH_GMS := true
-TARGET_INCLUDE_GOOGLE_TELEPHONY := false
-TARGET_INCLUDE_PIXEL_FRAMEWORK := false
-TARGET_INCLUDE_GOOGLE_CAMERA := false
-TARGET_SUPPORTS_GOOGLE_RECORDER := false
-TARGET_INCLUDE_GMAIL := false
-TARGET_INCLUDE_GOOGLE_MAPS := false
-
-# Debugging
-TARGET_INCLUDE_MATLOG := true
-TARGET_DEFAULT_ADB_ENABLED := false
-
-# Maintainer
-ALPHA_BUILD_TYPE := Unofficial
-ALPHA_MAINTAINER := ShantanuPC
+# Infinity-X Specific Flags
+INFINITY_BUILD_TYPE := OFFICIAL
+INFINITY_MAINTAINER := ShantanuPC
+WITH_GAPPS := true
+TARGET_BUILD_GOOGLE_TELEPHONY := false
+USE_MOTO_CALCULATOR := true
+TARGET_BUILD_VIMUSIC := true
 
 # Inherit some extras stuff
 $(call inherit-product-if-exists, vendor/extras/extras.mk)
@@ -63,7 +51,7 @@ TARGET_BOOT_ANIMATION_RES := 1080
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := begonia
-PRODUCT_NAME := lineage_begonia
+PRODUCT_NAME := infinity_begonia
 PRODUCT_BRAND := Redmi
 PRODUCT_MODEL := Redmi Note 8 Pro
 PRODUCT_MANUFACTURER := Xiaomi
