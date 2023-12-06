@@ -41,6 +41,9 @@ TARGET_NO_BOOTLOADER := true
 TARGET_BOARD_PLATFORM := mt6785
 BOARD_HAVE_MTK_FM := true
 
+# Power
+TARGET_POWERHAL_MODE_EXT := $(DEVICE_PATH)/power/power-mode.cpp
+
 # Kernel
 BOARD_KERNEL_CMDLINE := bootopt=64S3,32N2,64N2 androidboot.init_fatal_reboot_target=recovery
 BOARD_KERNEL_BASE := 0x40078000
