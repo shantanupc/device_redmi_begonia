@@ -112,6 +112,9 @@ function blob_fixup {
         lib/libsource.so)
             grep -q libui_shim.so "$2" || "$PATCHELF" --add-needed libui_shim.so "$2"
             ;;
+        vendor/bin/hw/vendor.dolby.hardware.dms@2.0-service)
+            "$PATCHELF" --add-needed "libstagefright_foundation-v33.so" "$2"
+            ;;
     esac
 }
 
