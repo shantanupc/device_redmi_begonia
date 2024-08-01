@@ -19,9 +19,6 @@ persist.vendor.quick.charge=1
 # Dalvik
 dalvik.vm.dex2oat64.enabled=true
 
-# Filesystem
-fs_mgr.overlayfs.prefer_cache_backing_storage=true
-
 # Display
 debug.cpurend.vsync=false
 
