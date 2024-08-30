@@ -57,8 +57,11 @@ function blob_fixup {
         lib/libsink.so)
             "${PATCHELF}" --add-needed "libshim_vtservice.so" "${2}"
             ;;
-        vendor/bin/hw/android.hardware.lights-service.mediatek)
-            "${PATCHELF}" --replace-needed "android.hardware.light-V1-ndk_platform.so" "android.hardware.light-V1-ndk.so" "${2}"
+        lib64/libem_support_jni.so)
+            "${PATCHELF}" --add-needed "libjni_shim.so" "${2}"
+            ;;
+        lib/libsource.so | vendor/lib/libMtkOmxVdecEx.so)
+            grep -q libui_shim.so "$2" || "$PATCHELF" --add-needed libui_shim.so "$2"
             ;;
         vendor/lib64/libudf.so)
             "${PATCHELF}" --replace-needed "libunwindstack.so" "libunwindstack-v30.so" "${2}"
