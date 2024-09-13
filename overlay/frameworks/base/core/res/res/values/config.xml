@@ -525,4 +525,7 @@
     </integer-array>
     
     <integer name="config_deviceLightCapabilities">72</integer>
+
+    <!-- Disable Smart 5G -->
+    <bool name="config_supportSmart5G">false</bool>
 </resources>
