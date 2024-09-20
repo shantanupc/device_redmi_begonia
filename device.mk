@@ -465,11 +465,5 @@ PRODUCT_PACKAGES += \
     libui_shim \
     libui_shim.vendor
 
-# Dolby
-PRODUCT_PACKAGES += \
-    libstagefright_softomx.vendor \
-    libstagefright_softomx_plugin.vendor \
-    libsqlite.vendor
-
 # Inherit vendor
 $(call inherit-product, vendor/redmi/begonia/begonia-vendor.mk)
