@@ -30,5 +30,5 @@ get_prop(hal_audio_default, wmt_prop)
 allow hal_audio_default hal_dms_hwservice:hwservice_manager find;
 binder_call(hal_audio_default, hal_dms_default)
 
-# Allow find operation for hal_audio_default on dms_hwservice
-allow hal_audio_default dms_hwservice:hwservice_manager find;
+# Allow hal_audio_default to find the Dolby hardware service
+allow hal_audio_default hal_dms_hwservice:hwservice_manager find;
