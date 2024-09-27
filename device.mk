@@ -155,7 +155,8 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     libcurl.vendor \
-    libjsoncpp.vendor
+    libjsoncpp.vendor \
+    libsqlite.vendor
 
 # DT2W
 PRODUCT_PACKAGES += \
