@@ -23,6 +23,14 @@ if [ ! -f "${HELPER}" ]; then
 fi
 source "${HELPER}"
 
+function vendor_imports() {
+	cat <<EOF >>"$1"
+		"device/redmi/begonia",
+		"hardware/mediatek",
+		"hardware/mediatek/libmtkperf_client"
+EOF
+}
+
 # Initialize the helper
 setup_vendor "${DEVICE}" "${VENDOR}" "${ANDROID_ROOT}"
 
