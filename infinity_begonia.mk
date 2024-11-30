@@ -29,7 +29,6 @@ INFINITY_MAINTAINER := ShantanuPC
 WITH_GAPPS := true
 TARGET_BUILD_GOOGLE_TELEPHONY := false
 USE_MOTO_CALCULATOR := true
-TARGET_BUILD_VIMUSIC := true
 
 # Inherit some extras stuff
 $(call inherit-product-if-exists, vendor/extras/extras.mk)
