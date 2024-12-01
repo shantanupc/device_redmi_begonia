@@ -1187,10 +1187,8 @@ vendor/lib64/vendor.xiaomi.hardware.citsensorservice@1.1_vendor.so
 vendor/bin/ccci_fsd
 vendor/bin/ccci_mdinit
 vendor/bin/ccci_rpcd
-vendor/bin/factory
 vendor/bin/fuelgauged
 vendor/bin/loghidlvendorservice
-vendor/bin/meta_tst
 vendor/bin/mnld
 vendor/bin/nvram_daemon
 vendor/bin/wmt_launcher
@@ -1586,7 +1584,6 @@ vendor/etc/ecc_list_OP17.xml
 vendor/etc/ecc_list_OP18.xml
 vendor/etc/ecc_list_OP20.xml
 vendor/etc/ecc_list_preference.xml
-vendor/etc/factory.ini
 vendor/etc/meow.cfg
 vendor/etc/mpe.conf
 vendor/etc/mtk_omx_core.cfg
