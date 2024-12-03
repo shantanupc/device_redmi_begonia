@@ -1318,7 +1318,6 @@ vendor/bin/volte_ua
 vendor/bin/vpud
 vendor/bin/wfca
 vendor/bin/xcap
-vendor/data/misc/ProjectConfig.mk
 vendor/etc/.tp/.ht120.mtc
 vendor/etc/apdb/APDB_MT6785_S01__W2041
 vendor/etc/apdb/APDB_MT6785_S01__W2041_ENUM
