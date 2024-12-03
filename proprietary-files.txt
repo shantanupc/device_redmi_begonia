@@ -1280,11 +1280,6 @@ vendor/bin/batteryd
 vendor/bin/bip
 vendor/bin/bp_kmsetkey_ca
 vendor/bin/charon
-vendor/bin/dconfig
-vendor/bin/dexecutor
-vendor/bin/doeapp-memtester
-vendor/bin/doeapp-sat
-vendor/bin/dtc_vendor
 vendor/bin/em_hidl
 vendor/bin/epdg_wod
 vendor/bin/fuelgauged_nvram
