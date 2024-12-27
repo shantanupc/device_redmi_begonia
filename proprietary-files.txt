@@ -1663,7 +1663,6 @@ vendor/lib64/APUWareUtilsServer.so
 vendor/lib64/APUWareXrpServer.so
 vendor/lib64/AVCSecureVdecCA.so
 vendor/lib64/VP9SecureVdecCA.so
-vendor/lib64/android.hidl.allocator@1.0.so
 vendor/lib64/arm.graphics-V1-ndk_platform.so
 vendor/lib64/gc2375af_mipi_raw_IdxMgr.so
 vendor/lib64/gc2375af_mipi_raw_tuning.so
