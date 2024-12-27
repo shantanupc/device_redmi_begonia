@@ -93,12 +93,9 @@ function blob_fixup {
 	    [ "$2" = "" ] && return 0
             "${PATCHELF}" --replace-needed "libutils.so" "libutils-v32.so" "${2}"
             ;;
-        vendor/lib64/libwvhidl.so)
-            [ "$2" = "" ] && return 0
-            "${PATCHELF}" --replace-needed "libprotobuf-cpp-lite-3.9.1.so" "libprotobuf-cpp-full-3.9.1.so" "${2}"
-            ;;
+        vendor/lib64/libwvhidl.so|\
         vendor/lib64/mediadrm/libwvdrmengine.so)
-	    [ "$2" = "" ] && return 0	
+            [ "$2" = "" ] && return 0
             "${PATCHELF}" --replace-needed "libprotobuf-cpp-lite-3.9.1.so" "libprotobuf-cpp-full-3.9.1.so" "${2}"
             ;;
         vendor/bin/mnld|\
@@ -110,10 +107,6 @@ function blob_fixup {
         vendor/bin/hw/android.hardware.keymaster@4.0-service.beanpod)
 	    [ "$2" = "" ] && return 0
             "${PATCHELF}" --add-needed "libshim_beanpod.so" "${2}"
-            ;;
-        vendor/lib64/libwifi-hal-mtk.so)
-	    [ "$2" = "" ] && return 0
-            "${PATCHELF}" --set-soname "libwifi-hal-mtk.so" "${2}"
             ;;
         vendor/lib/libMtkOmxVdecEx.so|\
         lib/libsource.so)

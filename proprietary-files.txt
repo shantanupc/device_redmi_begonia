@@ -2,7 +2,7 @@
 
 # Audio
 vendor/firmware/tfa98xx.cnt
-vendor/lib/libalsautils.so:vendor/lib/libalsautils-v30.so
+vendor/lib/libalsautils.so:vendor/lib/libalsautils-v30.so;FIX_SONAME
 vendor/lib/libaudio_param_parser-vnd.so
 vendor/lib/libaudiocompensationfilter_vendor.so
 vendor/lib/libaudiocompensationfilterc.so
@@ -15,7 +15,7 @@ vendor/lib/libaudioloudc.so
 vendor/lib/libaudioprimarydevicehalifclient.so
 vendor/lib/libaudiosmartpamtk.so
 vendor/lib/libaudiotoolkit_vendor.so
-vendor/lib64/libalsautils.so:vendor/lib64/libalsautils-v30.so
+vendor/lib64/libalsautils.so:vendor/lib64/libalsautils-v30.so;FIX_SONAME
 vendor/lib64/libaudio_param_parser-vnd.so
 vendor/lib64/libaudiocompensationfilter_vendor.so
 vendor/lib64/libaudiocompensationfilterc.so
@@ -1042,14 +1042,14 @@ vendor/etc/libnfc-nxp.conf
 vendor/etc/libnfc-nxp_RF.conf
 vendor/etc/sn100u_nfcon.pnscr
 vendor/lib/hw/nfc_nci.nqx.default.so
-vendor/lib/lib_smartpa_nxp_ap.so
+vendor/lib/lib_smartpa_nxp_ap.so;FIX_SONAME
 vendor/lib/libnxp_extamp_intf.so
 vendor/lib/libnxprecord.so
 vendor/lib/libnxpspeech.so
 vendor/lib/nfc_nci.nqx.default.hw.so
 vendor/lib/secure_element-impl.so
 vendor/lib64/hw/nfc_nci.nqx.default.so
-vendor/lib64/lib_smartpa_nxp_ap.so
+vendor/lib64/lib_smartpa_nxp_ap.so;FIX_SONAME
 vendor/lib64/libnxp_extamp_intf.so
 vendor/lib64/libnxprecord.so
 vendor/lib64/libnxpspeech.so
@@ -1114,7 +1114,7 @@ vendor/lib64/hw/thermal.mt6785.so
 vendor/bin/stp_dump3
 vendor/bin/wlan_assistant
 vendor/etc/init/wlan_assistant.rc
-vendor/lib64/libwifi-hal.so:vendor/lib64/libwifi-hal-mtk.so
+vendor/lib64/libwifi-hal.so:vendor/lib64/libwifi-hal-mtk.so;FIX_SONAME
 
 # Xiaomi
 vendor/lib64/vendor.xiaomi.hardware.citsensorservice@1.0.so
@@ -1513,7 +1513,7 @@ vendor/lib/libJpgEncPipe.so
 vendor/lib/libNoFpsActor.so
 vendor/lib/libTEECommon.so
 vendor/lib/lib_iir.so
-vendor/lib/lib_speech_enh.so
+vendor/lib/lib_speech_enh.so;FIX_SONAME
 vendor/lib/libaal_cust.so
 vendor/lib/libaal_key.so
 vendor/lib/libaal_mtk.so
@@ -1546,7 +1546,7 @@ vendor/lib/libfeature.stereo.provider.so
 vendor/lib/libfgauge_gm30.so
 vendor/lib/libfile_op.so
 vendor/lib/libfpspolicy.so
-vendor/lib/libfvaudio.so
+vendor/lib/libfvaudio.so;FIX_SONAME
 vendor/lib/libged.so
 vendor/lib/libgpu_aux.so
 vendor/lib/libgpud.so
@@ -1597,7 +1597,7 @@ vendor/lib/librpc.so
 vendor/lib/libscltm.so
 vendor/lib/libsimaka.so
 vendor/lib/libsn100u_fw.so
-vendor/lib/libspeech_enh_lib.so
+vendor/lib/libspeech_enh_lib.so;FIX_SONAME
 vendor/lib/libspeechparser_vendor.so
 vendor/lib/libssl-md.so
 vendor/lib/libssl-ss.so
@@ -1694,7 +1694,7 @@ vendor/lib64/libJpgEncPipe.so
 vendor/lib64/libNoFpsActor.so
 vendor/lib64/libTEECommon.so
 vendor/lib64/lib_iir.so
-vendor/lib64/lib_speech_enh.so
+vendor/lib64/lib_speech_enh.so;FIX_SONAME
 vendor/lib64/libaal_cust.so
 vendor/lib64/libaal_key.so
 vendor/lib64/libaal_mtk.so
@@ -1707,8 +1707,8 @@ vendor/lib64/libalCFR.so
 vendor/lib64/libalLDC.so
 vendor/lib64/libalRnBRT_GL_GBWRAPPER.so
 vendor/lib64/libalhLDC.so
-vendor/lib64/libapu-apuwareutils.mtk.so
-vendor/lib64/libapu-apuwarexrp.mtk.so
+vendor/lib64/libapu-apuwareutils.mtk.so;FIX_SONAME
+vendor/lib64/libapu-apuwarexrp.mtk.so;FIX_SONAME
 vendor/lib64/libapu-frontend.so
 vendor/lib64/libapu-platform.so
 vendor/lib64/libapusys.so
@@ -1751,7 +1751,7 @@ vendor/lib64/libfft_vendor.so
 vendor/lib64/libfile_op.so
 vendor/lib64/libforkexecwrap.so
 vendor/lib64/libfpspolicy.so
-vendor/lib64/libfvaudio.so
+vendor/lib64/libfvaudio.so;FIX_SONAME
 vendor/lib64/libged.so
 vendor/lib64/libgpu_aux.so
 vendor/lib64/libgpud.so
@@ -1808,7 +1808,7 @@ vendor/lib64/librgbwlightsensor.so
 vendor/lib64/librilfusion.so
 vendor/lib64/libscltm.so
 vendor/lib64/libsimaka.so
-vendor/lib64/libspeech_enh_lib.so
+vendor/lib64/libspeech_enh_lib.so;FIX_SONAME
 vendor/lib64/libspeechparser_vendor.so
 vendor/lib64/libssl-md.so
 vendor/lib64/libssl-ss.so
