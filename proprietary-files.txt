@@ -977,7 +977,7 @@ vendor/lib64/vendor.mediatek.hardware.videotelephony@1.0.so
 bin/vtservice
 etc/init/init.vtservice.rc
 lib/libcomutils.so
-lib/libimsma.so
+lib/libimsma.so;DISABLE_DEPS
 lib/libimsma_adapt.so
 lib/libimsma_rtp.so
 lib/libimsma_socketwrapper.so
