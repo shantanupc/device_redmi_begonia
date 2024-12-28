@@ -31,13 +31,13 @@ vendor/lib64/libaudiotoolkit_vendor.so
 
 # Audio-Hardware
 vendor/lib/vendor.mediatek.hardware.audio@6.1.so
-vendor/lib64/hw/audio.primary.mt6785.so
+vendor/lib64/hw/audio.primary.mt6785.so;DISABLE_DEPS
 vendor/lib64/hw/audio.r_submix.mt6785.so
 vendor/lib64/hw/audio.usb.mt6785.so
 vendor/lib64/vendor.mediatek.hardware.audio@6.1.so
 
 # Audio Hardware - from mtk android-13.0.0_r16
-vendor/lib/hw/audio.primary.mt6785.so|f51ba0df90f3e74d51cef8c041eab4308d77c31c
+vendor/lib/hw/audio.primary.mt6785.so;DISABLE_DEPS|f51ba0df90f3e74d51cef8c041eab4308d77c31c
 vendor/lib/hw/audio.r_submix.mt6785.so|ce142652e98bbe95ab09b2d0073825cfe6984f98
 vendor/lib/hw/audio.usb.mt6785.so|280239974813303ad03963d4f528fcb14d1c2138
 
@@ -809,8 +809,8 @@ vendor/lib/hw/vendor.mediatek.hardware.dfps@1.0-impl.so
 vendor/lib/hw/vendor.mediatek.hardware.mms@1.5-impl.so
 vendor/lib/hw/vendor.mediatek.hardware.mtkcodecservice@1.1-impl.so
 vendor/lib/hw/vendor.mediatek.hardware.nvram@1.1-impl.so
-vendor/lib/hw/vendor.mediatek.hardware.pq@2.6-impl.so
-vendor/lib/hw/vendor.mediatek.hardware.videotelephony@1.0-impl.so
+vendor/lib/hw/vendor.mediatek.hardware.pq@2.6-impl.so;DISABLE_DEPS
+vendor/lib/hw/vendor.mediatek.hardware.videotelephony@1.0-impl.so;DISABLE_DEPS
 vendor/lib/libMtkSpeechEnh.so
 vendor/lib/libmtk_drvb.so
 vendor/lib/libmtkares.so
@@ -828,7 +828,7 @@ vendor/lib/libmtkcam_mapping_mgr.so
 vendor/lib/libmtkcam_metadata.so
 vendor/lib/libmtkcam_metastore.so
 vendor/lib/libmtkcam_modulehelper.so
-vendor/lib/libmtkcam_stdutils.so
+vendor/lib/libmtkcam_stdutils.so;DISABLE_DEPS
 vendor/lib/libmtkcam_streamutils.so
 vendor/lib/libmtkcam_sysutils.so
 vendor/lib/libmtkcam_tsf.so
@@ -868,8 +868,8 @@ vendor/lib64/hw/vendor.mediatek.hardware.dfps@1.0-impl.so
 vendor/lib64/hw/vendor.mediatek.hardware.mms@1.5-impl.so
 vendor/lib64/hw/vendor.mediatek.hardware.mtkcodecservice@1.1-impl.so
 vendor/lib64/hw/vendor.mediatek.hardware.nvram@1.1-impl.so
-vendor/lib64/hw/vendor.mediatek.hardware.pq@2.6-impl.so
-vendor/lib64/hw/vendor.mediatek.hardware.videotelephony@1.0-impl.so
+vendor/lib64/hw/vendor.mediatek.hardware.pq@2.6-impl.so;DISABLE_DEPS
+vendor/lib64/hw/vendor.mediatek.hardware.videotelephony@1.0-impl.so;DISABLE_DEPS
 vendor/lib64/libMtkSpeechEnh.so
 vendor/lib64/libmtk-ril.so
 vendor/lib64/libmtk_drvb.so
@@ -922,7 +922,7 @@ vendor/lib64/libmtkcam_pipelinepolicy.so
 vendor/lib64/libmtkcam_pipelinepolicy_factory.so
 vendor/lib64/libmtkcam_prerelease.so
 vendor/lib64/libmtkcam_rsc.so
-vendor/lib64/libmtkcam_stdutils.so
+vendor/lib64/libmtkcam_stdutils.so;DISABLE_DEPS
 vendor/lib64/libmtkcam_streamutils.so
 vendor/lib64/libmtkcam_sysutils.so
 vendor/lib64/libmtkcam_tsf.so
@@ -981,17 +981,17 @@ lib/libimsma.so;DISABLE_DEPS
 lib/libimsma_adapt.so
 lib/libimsma_rtp.so
 lib/libimsma_socketwrapper.so
-lib/libmtk_vt_service.so
-lib/libmtk_vt_wrapper.so
-lib/libmtkavenhancements.so
+lib/libmtk_vt_service.so;DISABLE_DEPS
+lib/libmtk_vt_wrapper.so;DISABLE_DEPS
+lib/libmtkavenhancements.so;DISABLE_DEPS
 lib/libsignal.so
 lib/libsink.so
 lib/libsource.so
 lib/libvcodec_cap.so
 lib/libvcodec_capenc.so
 lib/libvt_avsync.so
-lib64/libmtk_vt_wrapper.so
-lib64/libmtkavenhancements.so
+lib64/libmtk_vt_wrapper.so;DISABLE_DEPS
+lib64/libmtkavenhancements.so;DISABLE_DEPS
 lib64/libvcodec_cap.so
 lib64/libvcodec_capenc.so
 -priv-app/ImsService/ImsService.apk|6b231d957c36f212ba25195b7ef4a48c65e969d6
@@ -1057,12 +1057,12 @@ vendor/lib64/nfc_nci.nqx.default.hw.so
 vendor/lib64/secure_element-impl.so
 
 # Neural-networks
-vendor/bin/hw/android.hardware.neuralnetworks@1.3-service-mtk-neuron
+vendor/bin/hw/android.hardware.neuralnetworks@1.3-service-mtk-neuron;DISABLE_DEPS
 vendor/etc/init/android.hardware.neuralnetworks@1.3-service-mtk-neuron.rc
 -vendor/etc/vintf/manifest/android.hardware.neuralnetworks@1.3-service-mtk-dsp-gpu.xml
 
 # Radio
-vendor/lib/libvsim.so
+vendor/lib/libvsim.so;DISABLE_DEPS
 
 # Sensors
 vendor/lib/hw/sensors.touch.so
@@ -1158,7 +1158,7 @@ vendor/lib/libMtkOmxVdecEx.so
 # Misc
 vendor/bin/hw/mfp-daemon
 vendor/bin/hw/mtkfusionrild
-vendor/bin/hw/vtservice_hidl
+vendor/bin/hw/vtservice_hidl;DISABLE_DEPS
 vendor/bin/atci_service
 vendor/bin/atcid
 vendor/bin/audiocmdservice_atci
@@ -1477,8 +1477,8 @@ vendor/etc/virtual-spn-conf-by-efgid1.xml
 vendor/etc/virtual-spn-conf-by-efpnn.xml
 vendor/etc/virtual-spn-conf-by-efspn.xml
 vendor/etc/virtual-spn-conf-by-imsi.xml
-vendor/lib/hw/dfps.mt6785.so
-vendor/lib/hw/displayfeature.default.so
+vendor/lib/hw/dfps.mt6785.so;DISABLE_DEPS
+vendor/lib/hw/displayfeature.default.so;DISABLE_DEPS
 vendor/lib/hw/kmsetkey.beanpod.so
 vendor/lib/AVCSecureVdecCA.so
 vendor/lib/VP9SecureVdecCA.so
@@ -1529,7 +1529,7 @@ vendor/lib/libcares_naptr.so
 vendor/lib/libcarrierconfig.so
 vendor/lib/libccci_util.so
 vendor/lib/libcharon-ss.so
-vendor/lib/libcheckpid.so
+vendor/lib/libcheckpid.so;DISABLE_DEPS
 vendor/lib/libchromanr.so
 vendor/lib/libcrypto-md.so
 vendor/lib/libcrypto-ss.so
@@ -1611,7 +1611,7 @@ vendor/lib/libtflite_mtk_static_R.so
 vendor/lib/libthha.so
 vendor/lib/libtinyxml.so
 vendor/lib/libtlcWidevineModularDrm.so
-vendor/lib/libudf.so
+vendor/lib/libudf.so;DISABLE_DEPS
 vendor/lib/libvc1dec_sa.ca7.so
 vendor/lib/libvcodec_oal.so
 vendor/lib/libvcodec_utility.so
@@ -1656,8 +1656,8 @@ vendor/lib/s5kgw1ofilm_mipi_raw_tuning.so
 vendor/lib/s5kgw1sunny_mipi_raw_IdxMgr.so
 vendor/lib/s5kgw1sunny_mipi_raw_tuning.so
 vendor/lib/se_extn_client.so
-vendor/lib64/hw/dfps.mt6785.so
-vendor/lib64/hw/displayfeature.default.so
+vendor/lib64/hw/dfps.mt6785.so;DISABLE_DEPS
+vendor/lib64/hw/displayfeature.default.so;DISABLE_DEPS
 vendor/lib64/hw/kmsetkey.beanpod.so
 vendor/lib64/APUWareUtilsServer.so
 vendor/lib64/APUWareXrpServer.so
@@ -1722,7 +1722,7 @@ vendor/lib64/libcares_naptr.so
 vendor/lib64/libcarrierconfig.so
 vendor/lib64/libccci_util.so
 vendor/lib64/libcharon-ss.so
-vendor/lib64/libcheckpid.so
+vendor/lib64/libcheckpid.so;DISABLE_DEPS
 vendor/lib64/libchromanr.so
 vendor/lib64/libcmdl.so
 vendor/lib64/libcmdl_ndk.mtk.so
@@ -1787,7 +1787,7 @@ vendor/lib64/libmnetlink_v104.so
 vendor/lib64/libmsbc_mtk.so
 vendor/lib64/libmtcloader.so
 vendor/lib64/libneuroeara.so
-vendor/lib64/libneuron_adapter.so
+vendor/lib64/libneuron_adapter.so;DISABLE_DEPS
 vendor/lib64/libneuron_platform.so
 vendor/lib64/libneuron_runtime.so
 vendor/lib64/libneuropilot_hal_utils.so
@@ -1821,7 +1821,7 @@ vendor/lib64/libtflite_mtk_static_R.so
 vendor/lib64/libthha.so
 vendor/lib64/libtinyxml.so
 vendor/lib64/libtlcWidevineModularDrm.so
-vendor/lib64/libudf.so
+vendor/lib64/libudf.so;DISABLE_DEPS
 vendor/lib64/libvcodec_oal.so
 vendor/lib64/libverno.so
 vendor/lib64/libvia-ril.so
@@ -1831,7 +1831,7 @@ vendor/lib64/libvowp23_sid_training.vendor.so
 vendor/lib64/libvowp25testing.vendor.so
 vendor/lib64/libvowp2training.vendor.so
 vendor/lib64/libvpu.so
-vendor/lib64/libvsim.so
+vendor/lib64/libvsim.so;DISABLE_DEPS
 vendor/lib64/libwapi.so
 vendor/lib64/libwifitest.so
 vendor/lib64/libwo.so
