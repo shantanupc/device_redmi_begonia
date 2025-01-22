@@ -390,13 +390,8 @@ PRODUCT_PACKAGES += \
     android.hardware.usb@1.1.vendor
 
 # Vibrator
-$(call soong_config_set, vibrator, vibratortargets, vibratoraidlV2target)
-
 PRODUCT_PACKAGES += \
-    vendor.qti.hardware.vibrator.service
-
-PRODUCT_COPY_FILES += \
-    vendor/qcom/opensource/vibrator/excluded-input-devices.xml:$(TARGET_COPY_OUT_VENDOR)/etc/excluded-input-devices.xml
+    android.hardware.vibrator-service.mediatek
 
 # VNDK
 PRODUCT_COPY_FILES += \
