@@ -39,7 +39,6 @@ TARGET_NO_BOOTLOADER := true
 
 # Platform
 TARGET_BOARD_PLATFORM := mt6785
-BOARD_HAS_MTK_HARDWARE := true
 BOARD_HAVE_MTK_FM := true
 
 # Kernel
