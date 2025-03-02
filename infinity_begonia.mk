@@ -19,7 +19,7 @@ $(call inherit-product, device/redmi/begonia/device.mk)
 $(call inherit-product, vendor/infinity/config/common_full_phone.mk)
 TARGET_SUPPORTS_QUICK_TAP := true
 TARGET_DOESNT_LIKE_FLIPENDO := true
-TARGET_SUPPORTS_BLUR := true
+TARGET_SUPPORTS_BLUR := false
 TARGET_HAS_UDFPS := false
 TARGET_FACE_UNLOCK_SUPPORTED := true
 
