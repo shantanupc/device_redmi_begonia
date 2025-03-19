@@ -150,7 +150,7 @@ SYSTEM_EXT_PUBLIC_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/public
 SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/private
 
 # Vibrator
-TARGET_VIBRATOR_SUPPORTS_EFFECTS := true
+$(call soong_config_set,mediatek_vibrator,supports_effects,true)
 
 # Wifi
 WPA_SUPPLICANT_VERSION := VER_0_8_X
