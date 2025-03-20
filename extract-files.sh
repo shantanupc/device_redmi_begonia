@@ -110,6 +110,10 @@ function blob_fixup {
         vendor/bin/hw/vendor.dolby.hardware.dms@2.0-service)
             "$PATCHELF" --add-needed "libstagefright_foundation-v33.so" "$2"
             ;;
+        lib64/libem_support_jni.so)
+    	    [ "$2" = "" ] && return 0
+             "${PATCHELF}" --add-needed "libjni_shim.so" "${2}"
+             ;;
         vendor/lib*/libwvhidl.so)
 	    [ "$2" = "" ] && return 0
             "${PATCHELF}" --replace-needed "libcrypto.so" "libcrypto-v33.so" "${2}"
