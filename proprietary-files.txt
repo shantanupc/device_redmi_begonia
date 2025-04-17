@@ -997,6 +997,15 @@ vendor/lib64/libem_camera_jni.so|904c222b39f4a18e1843d68ce65a805d99b89c1a
 # MTK-IMS
 bin/vtservice
 etc/init/init.vtservice.rc
+framework/mediatek-common.jar|2d76dac9118fcad456ab432ce17ed9d7a5ce1932
+framework/mediatek-framework.jar
+framework/mediatek-ims-base.jar|4a9c6343e905b731564e8b344af20f0bb64b47f7
+framework/mediatek-ims-common.jar
+framework/mediatek-ims-extension-plugin.jar
+framework/mediatek-ims-legacy.jar
+framework/mediatek-telecom-common.jar
+framework/mediatek-telephony-base.jar|be405f248a416a15364c976f60ec912eeb75df5d
+framework/mediatek-telephony-common.jar|b0f42c4e40301cf9a2b297a31c8ce315e52ad306
 lib/libcomutils.so
 lib/libimsma.so
 lib/libimsma_adapt.so
@@ -1015,7 +1024,7 @@ lib64/libmtk_vt_wrapper.so
 lib64/libmtkavenhancements.so
 lib64/libvcodec_cap.so
 lib64/libvcodec_capenc.so
--priv-app/ImsService/ImsService.apk|6b231d957c36f212ba25195b7ef4a48c65e969d6
+-priv-app/ImsService/ImsService.apk|68a98d2d139b044312f77acbef14c430391203cc
 system_ext/lib/vendor.mediatek.hardware.videotelephony@1.0.so
 system_ext/lib64/vendor.mediatek.hardware.videotelephony@1.0.so
 
