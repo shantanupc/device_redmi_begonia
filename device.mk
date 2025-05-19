@@ -97,9 +97,9 @@ PRODUCT_PACKAGES += \
     android.hardware.gatekeeper@1.0-service \
     android.hardware.gatekeeper@1.0-impl
 
-# DT2W
+# FM Radio
 PRODUCT_PACKAGES += \
-    DT2W-Service-Begonia
+    FMRadio
 
 # Health
 PRODUCT_PACKAGES += \
