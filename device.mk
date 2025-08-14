@@ -34,7 +34,6 @@ PRODUCT_PACKAGES += \
     android.hardware.bluetooth@1.0.vendor \
     android.hardware.bluetooth@1.1.vendor \
     android.hardware.bluetooth.a2dp@1.0.vendor \
-    android.hardware.bluetooth.audio-impl \
     audio.bluetooth.default \
     audio.r_submix.default \
     audio.usb.default \
@@ -77,6 +76,11 @@ PRODUCT_PACKAGES += \
     libexpat.vendor \
     libpng.vendor \
     liblz4.vendor
+
+# Bluetooth
+PRODUCT_PACKAGES += \
+    android.hardware.bluetooth-service.mediatek \
+    android.hardware.bluetooth.audio-impl
 
 # Lineage Health
 $(call soong_config_set,lineage_health,charging_control_supports_bypass,false)

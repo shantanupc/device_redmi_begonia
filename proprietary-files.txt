@@ -46,9 +46,6 @@ vendor/lib/hw/audio.usb.mt6785.so
 # Bluetooth
 system_ext/lib/vendor.mediatek.hardware.bluetooth.audio@2.1.so
 system_ext/lib64/vendor.mediatek.hardware.bluetooth.audio@2.1.so
-vendor/bin/hw/android.hardware.bluetooth@1.0-service-mediatek
-vendor/etc/init/android.hardware.bluetooth@1.0-service-mediatek.rc
-vendor/lib/hw/android.hardware.bluetooth@1.0-impl-mediatek.so
 vendor/lib/hw/vendor.mediatek.hardware.bluetooth.audio@2.1-impl.so
 vendor/lib/libbluetooth_audio_session_mediatek.so
 vendor/lib/libbluetooth_hw_test.so
@@ -58,7 +55,6 @@ vendor/lib/libbluetooth_relayer.so
 vendor/lib/libbluetoothem_mtk.so
 vendor/lib/libbt-vendor.so
 vendor/lib/vendor.mediatek.hardware.bluetooth.audio@2.1.so
-vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-mediatek.so
 vendor/lib64/hw/vendor.mediatek.hardware.bluetooth.audio@2.1-impl.so
 vendor/lib64/libbluetooth_audio_session_mediatek.so
 vendor/lib64/libbluetooth_hw_test.so
@@ -2003,4 +1999,3 @@ vendor/thh/ta/d78d338b1ac349e09f65f4efe179739d.ta
 vendor/thh/ta/d91f322ad5a441d5955110eda3272fc0.ta
 vendor/thh/ta/e5140b3376fa4c63ab18062caab2fb5c.ta
 vendor/thh/ta/e97c270ea5c44c58bcd3384a2fa2539e.ta
-vendor/thh/ta/fc32e4da17d342449b01c992d56d71bf.ta
