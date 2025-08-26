@@ -63,8 +63,8 @@ PRODUCT_COPY_FILES += \
     frameworks/av/services/audiopolicy/config/usb_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/usb_audio_policy_configuration.xml
 
 # BesLoudness
-PRODUCT_PACKAGES += \
-    BesLoudness
+#PRODUCT_PACKAGES += \
+#    BesLoudness
 
 # Camera
 PRODUCT_PACKAGES += \
