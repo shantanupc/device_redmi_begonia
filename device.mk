@@ -372,7 +372,6 @@ PRODUCT_COPY_FILES += \
 
 # Tethering
 PRODUCT_PACKAGES += \
-    NcmTetheringOverlay \
     TetheringConfigOverlay
 
 # Text classifier
