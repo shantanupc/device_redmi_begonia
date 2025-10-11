@@ -139,7 +139,7 @@ PRODUCT_PACKAGES += \
 
 # FM Radio
 PRODUCT_PACKAGES += \
-    MtkFMRadio
+    FMRadio
 
 # Gatekeeper
 PRODUCT_PACKAGES += \
