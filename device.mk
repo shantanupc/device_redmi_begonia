@@ -83,7 +83,7 @@ PRODUCT_PACKAGES += \
     android.hardware.bluetooth.audio-impl
 
 # Lineage Health
-$(call soong_config_set,lineage_health,charging_control_supports_bypass,false)
+$(call soong_config_set_bool,lineage_health,charging_control_supports_bypass,false)
 
 PRODUCT_PACKAGES += \
     vendor.lineage.health-service.default
